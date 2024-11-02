@@ -1766,3 +1766,6 @@ java.util.concurrent.CompletionException: org.eclipse.lsp4j.jsonrpc.ResponseErro
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 	... 11 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-11-02 23:17:18.146
+!MESSAGE Can't connect to any repository: 
