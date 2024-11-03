@@ -206,3 +206,5 @@
 2024-11-02 23:13:42,880 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-02 23:13:42,885 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-02 23:13:42,888 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SPRING_PRACTISE\SpringBoot\05_Spring_Data_JPA\src\test\resources
+2024-11-02 23:26:43,951 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@3d615a33{STOPPING}[12.0.12,sto=0]
+2024-11-02 23:26:43,956 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@13e253ef{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
