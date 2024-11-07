@@ -14,7 +14,6 @@ import com.om.repository.EmpRepo;
 public class CustomUserDetailsService implements UserDetailsService{
 
 	
-	
 	@Autowired
 	private EmpRepo empRepo;
 	

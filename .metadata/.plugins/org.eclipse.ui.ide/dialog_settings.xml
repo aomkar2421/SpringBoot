@@ -43,6 +43,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\SPRING_PRACTISE\SpringBoot\09_Spring_Security_DB_App"/>
+			<item value="D:\SPRING_PRACTISE\SpringBoot\08_Spring_Security_App"/>
+			<item value="D:\SPRING_PRACTISE\SpringBoot\06_Data_JPA_Mapping"/>
 			<item value="D:\SpringBoot Initializer\08_Spring_Security_App"/>
 			<item value="D:\SpringBoot Initializer\06_Data_JPA_Mapping"/>
 			<item value="D:\SPRING_PRACTISE\SpringBoot\03_Spring_MVC_Boot"/>
