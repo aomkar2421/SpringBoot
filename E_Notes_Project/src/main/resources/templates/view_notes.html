@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{ base :: layout('E Notes | View Notes', ~{::section}) }">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enotes | View Notes</title>
+</head>
+<body>
+	<section>
+		<div class="container-fluid p-2">
+			<h4 class="text-center">View All Notes</h4>
+			<div class="row">
+				<div class="col-md-10 offset-md-1 mt-2">
+					<div class="card">
+						<div class="card-body">
+							<div class="text-center">
+								<i class="fa-solid fa-book fa-2x"></i>
+							</div>
+
+							<p>What is Python ?</p>
+							<p>Python is programming Langauage</p>
+							<p>Publish Date : 2023-05-08</p>
+
+							<div class="text-center">
+								<a href="editNotes" class="btn btn-info btn-lg" style="width: 100px;">Edit</a> <a
+									href="deleteNotes" class="btn btn-success btn-lg">Delete</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
