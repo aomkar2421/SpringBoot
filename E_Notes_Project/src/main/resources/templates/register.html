@@ -17,11 +17,19 @@
 					</div>
 
 					<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-						<form>
+					
+					<h2 class="text-center">Register Page</h2>
+					
+					<th:block th:if="${session.msg}">
+						<p class="fs-5 text-center text-success">[[${session.msg}]]</p> 
+						<th:block th:text="${@userServiceImpl.removeSessionMessage()}"></th:block>
+					</th:block>
+					
+						<form action="saveUser" method="post" class="mt-5">
 
 							<div data-mdb-input-init class="form-outline mb-3">
 								<label class="form-label" for="form3Example3">Enter Full
-									Name</label> <input type="email" name="email" id="form3Example3"
+									Name</label> <input type="text" name="name" id="form3Example3"
 									class="form-control" />
 							</div>
 
@@ -33,13 +41,13 @@
 
 							<div data-mdb-input-init class="form-outline mb-3">
 								<label class="form-label" for="form3Example3">Enter
-									Password</label> <input type="password" id="form3Example4"
+									Password</label> <input type="password" name="password" id="form3Example4"
 									class="form-control" />
 							</div>
 
 							<div data-mdb-input-init class="form-outline mb-3">
 								<label class="form-label" for="form3Example3">Enter
-									Qualification</label> <input type="email" name="email"
+									Qualification</label> <input type="text" name="qualification"
 									id="form3Example3" class="form-control" />
 							</div>
 
@@ -60,16 +68,16 @@
 
 							<div data-mdb-input-init class="form-outline mb-3">
 								<label class="form-label" for="form3Example3">Enter
-									Address</label> <input type="email" name="email" id="form3Example3"
+									Address</label> <input type="test" name="address" id="form3Example3"
 									class="form-control" />
 							</div>
 
 							<div class="text-center text-lg-start mt-4 pt-2">
-								<button type="button" data-mdb-button-init data-mdb-ripple-init
+								<button type="submit" data-mdb-button-init data-mdb-ripple-init
 									class="btn btn-primary"
-									style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #ffb347; color: #3d3d3d">Login</button>
+									style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #ffb347; color: #3d3d3d">Register</button>
 								<p class="small fw-bold mt-2 pt-1 mb-0">
-									Already have an account? <a href="login" class="link-danger">Login</a>
+									Already have an account? <a href="signin" class="link-danger">Login</a>
 								</p>
 							</div>
 
