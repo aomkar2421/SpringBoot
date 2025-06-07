@@ -17,6 +17,12 @@ public class SecurityConfig {
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
+	@Autowired
+	private CustomAuthSucessHandler sucessHandler;
+	
+	@Autowired
+	private CustomFailureHandler failureHandler;
+	
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
@@ -38,7 +44,9 @@ public class SecurityConfig {
 		requestMatchers("/**").permitAll().and().
 		formLogin().loginPage("/signin").
 		loginProcessingUrl("/userLogin").
-		defaultSuccessUrl("/user/addNotes").permitAll();
+		defaultSuccessUrl("/user/addNotes").
+		failureHandler(failureHandler).
+		permitAll();
 		
 		return http.build();
 	}

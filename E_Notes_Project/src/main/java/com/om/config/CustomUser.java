@@ -18,6 +18,15 @@ public class CustomUser implements UserDetails{
 		this.user = user;
 	}
 
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		SimpleGrantedAuthority authority = new SimpleGrantedAuthority(user.getRole());
@@ -43,7 +52,7 @@ public class CustomUser implements UserDetails{
 	@Override
 	public boolean isAccountNonLocked() {
 		// TODO Auto-generated method stub
-		return true;
+		return user.isAccountNonLocked();
 	}
 
 	@Override
@@ -55,7 +64,7 @@ public class CustomUser implements UserDetails{
 	@Override
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
-		return true;
+		return user.isEnable();
 	}
 
 }
