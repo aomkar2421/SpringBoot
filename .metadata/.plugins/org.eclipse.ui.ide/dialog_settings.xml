@@ -43,6 +43,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="P:\J_SPRING_PRACTISE\SpringBoot\I_JWT_Practise"/>
 			<item value="C:\Users\Admin\Downloads\AngularCarRental-main\backend"/>
 			<item value="D:\SPRING_PRACTISE\SpringBoot\16_Spring_JWT"/>
 		</list>
